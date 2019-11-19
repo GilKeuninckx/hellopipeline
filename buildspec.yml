@@ -6,4 +6,6 @@ phases:
 artifacts:
   files:
     - '**/**'
+    -appspec.yml
+    -scripts/
   discard-paths: yes
