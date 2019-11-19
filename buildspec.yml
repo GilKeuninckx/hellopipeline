@@ -5,7 +5,6 @@ phases:
       python: 3.7
 artifacts:
   files:
-    - '**/**'
     -appspec.yml
     -scripts/
   discard-paths: yes
