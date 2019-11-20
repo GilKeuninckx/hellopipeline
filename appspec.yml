@@ -6,6 +6,9 @@ files:
     overwrite: true
 hooks:
   BeforeInstall:
+  - location: scripts/beforeInstall
+      timeout: 300
+      runas: root
     - location: scripts/install_dependencies
       timeout: 300
       runas: root
@@ -13,7 +16,11 @@ hooks:
       timeout: 300
       runas: root
   ApplicationStop:
+  - location: scripts/afterInstall
+      timeout: 300
+      runas: root
     - location: scripts/stop_server
       timeout: 300
       runas: root
+      
 
