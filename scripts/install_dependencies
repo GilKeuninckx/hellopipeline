@@ -7,6 +7,6 @@ then
 rm -f /var/www/html/index.html
 else
 echo "File does not exist, proceeding..."
-
+fi
 apt install -y apache2
 
