@@ -2,7 +2,8 @@
 # I want to make sure that the directory is clean and has nothing left over from
 # previous deployments. The servers auto scale so the directory may or may not
 # exist.
-if [ -d /var/www/release ]; then
-    rm -rf /var/www/index.html
-fi
-mkdir -vp /var/www/index.html
+if [ -f /var/www/html/index.html ]
+then
+rm -f /var/www/html/index.html
+else
+echo "File does not exist, proceeding..."
