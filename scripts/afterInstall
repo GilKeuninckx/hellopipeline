@@ -1,0 +1,4 @@
+#Copied with piece of code from a github repo
+#Explanation for this piece of code on following link
+#https://github.com/aws/aws-codedeploy-agent/issues/14
+rsync --delete-before --verbose --archive --exclude "htdocs/media/" --exclude ".*" --exclude "htdocs/var/" --exclude "htdocs/app/etc/local.xml" /var/www/release/ /var/www/magento/ > /var/log/deploy.log
