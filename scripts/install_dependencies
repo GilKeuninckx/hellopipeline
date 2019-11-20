@@ -10,3 +10,4 @@ echo "File does not exist, proceeding..."
 fi
 apt install -y apache2
 apt install -y npm
+apt install -y python-pip
