@@ -1,5 +1,5 @@
 #Copied with piece of code from a github repo
 #Explanation for this piece of code on following link
 #https://github.com/aws/aws-codedeploy-agent/issues/14.
-rsync --delete-before --verbose --archive --exclude ".*" /var/www/html/index.html/ /var/www/magento/ > /var/log/deploy.log
+#rsync --delete-before --verbose --archive --exclude ".*" /var/www/html/ /var/www/magento/ > /var/log/deploy.log
 
